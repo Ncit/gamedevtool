@@ -53,10 +53,18 @@ implementing the web app.
 
 ## HTML/Tailwind structure (`html/*.html`)
 
-Representative screens exported with structure + Tailwind classes for layout/spacing
-reference: `graph-canvas`, `entity-inspector`, `entity-table`, `dialog-tree-editor`,
-`agent-activity`. (The dot-grid background is a WebGL shader in Pencil — in the web app,
-reproduce it with a CSS radial-gradient tiled background, not the rasterized image.)
+**Every screen** is also exported with structure + Tailwind classes for exact
+layout/spacing/measurements — same base filename as the PNG (e.g. `graph-canvas.html`).
+Between the PNG (visual truth) and the HTML (exact structure) + `tokens.css` (exact
+values), everything needed to rebuild any screen is here — no `.pen` access required.
+
+Caveats when reproducing:
+- The dot-grid canvas background is a **WebGL shader** in Pencil; HTML exports rasterize
+  it to an embedded WebP. In the web app, reproduce it with a tiled CSS radial-gradient,
+  not the image.
+- Graph **edges** are SVG bezier `path` nodes; rebuild them as real SVG/React-Flow edges.
+- Exports are **static snapshots of one state**. Interactions/alternate states are
+  themselves separate screens (e.g. `*-edit-validation`, `system-states`, `*-context-menu`).
 
 ## Regenerating these exports
 
