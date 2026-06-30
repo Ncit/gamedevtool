@@ -1,0 +1,59 @@
+/* GameDevTool design tokens — source of truth: gamedevtool.pen
+ * Dark, dense game-dev tooling theme. Use these in the web app (CSS vars / Tailwind theme). */
+:root {
+  /* Surfaces */
+  --bg: #0E1116;
+  --bg-surface: #161A21;
+  --bg-elevated: #1C212B;
+  --bg-input: #10141A;
+  --bg-hover: #222834;
+  --border: #2A313C;
+  --border-strong: #3A434F;
+
+  /* Text */
+  --text-primary: #E6EAF0;
+  --text-secondary: #9BA6B4;
+  --text-muted: #69737F;
+
+  /* Brand / accent */
+  --accent: #8B7CFF;
+  --accent-hover: #9C8FFF;
+  --accent-soft: #8B7CFF26; /* 15% alpha */
+  --on-accent: #0E1116;
+  --teal: #2DD4BF;
+
+  /* Entity-type colors (graph nodes, dots, icons) */
+  --type-mission: #F59E0B;
+  --type-quest: #FBBF24;
+  --type-npc: #38BDF8;
+  --type-dialog: #A78BFA;
+  --type-plot: #F472B6;
+  --type-milestone: #34D399;
+  --type-location: #2DD4BF;
+  --type-item: #FB923C;
+  --type-faction: #F87171;
+  --type-lore: #94A3B8;
+
+  /* Status colors */
+  --status-idea: #69737F;
+  --status-draft: #94A3B8;
+  --status-progress: #FBBF24;
+  --status-done: #34D399;
+  --status-cut: #F87171;
+
+  /* Semantic */
+  --success: #34D399;
+  --warning: #FBBF24;
+  --error: #F87171;
+  --info: #38BDF8;
+
+  /* Type */
+  --font-ui: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Radius */
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-pill: 999px;
+}
