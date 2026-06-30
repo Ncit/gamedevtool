@@ -179,22 +179,34 @@ feeds existing pipelines rather than replacing engines.
 
 ---
 
-## UI & Pencil Mockups (reusable components)
+## UI Design — DONE, exported for implementation
 
-`.pen` is empty → **build a component library first, then instance it** (Pencil "Design
-System" workflow). Dark, dense, game-dev tooling aesthetic.
+The full UI is already designed in Pencil (`/gamedevtool.pen`) and **exported to
+`docs/design/`** — this is the **authoritative UI spec for building the web app**.
 
-1. **Tokens/theme** — color/type/space variables (dark) as `.pen` variables.
-2. **Reusable components** (build once, instance everywhere): `Button`, `Input`,
-   `SearchBar`, `TagChip`, `StatusPill`, `NavItem`, `Toolbar`, `Tabs`, `Breadcrumb`,
-   `EmptyState`, `EntityCard`, `EntityNode` (variants per type/color), `ConnectionBadge`,
-   `InspectorField`, `InspectorPanel`, `DialogLineNode`, `AppShell` (sidebar+topbar+content+inspector).
-3. **Screens** (composed from the above): **(MVP)** Graph canvas, Entity inspector,
-   Entity table view; **(later)** Dialog tree editor, MCP/agent activity panel
-   (shows external-agent edits → trust + transparency), Milestone view.
+> **Implementers (incl. cloud/headless Claude Code): build the UI from `docs/design/`.**
+> The `.pen` file is encrypted and NOT readable outside the Pencil MCP, so do not try to
+> open it. Instead read [`docs/design/README.md`](design/README.md) first, then per screen
+> use `docs/design/screens/<name>.png` (visual truth) + `docs/design/html/<name>.html`
+> (exact Tailwind structure) + [`docs/design/tokens.css`](design/tokens.css) (exact
+> colors/fonts/radii). 22 screens are covered.
 
-Multiple synchronized views (graph + tree + document) of the same store serve both visual
-and list-oriented designers (HacknPlan pattern, taken further on true graph expressiveness).
+Dark, dense, game-dev tooling aesthetic. **17 reusable components** are designed (build
+these in React first): `Button`, `Input`, `SearchBar`, `TagChip`, `StatusPill`,
+`ConnectionBadge`, `NavItem`, `EntityNode` (color variant per type), `EntityCard`,
+`InspectorField`, `InspectorPanel`, `Sidebar`, `TopBar`, `Modal`, `ActivityItem`,
+`DialogLineNode`, `DialogChoice`.
+
+**Screens designed (22):** graph canvas, entity inspector, entity table, dialog tree
+editor, mission dependencies, plot timeline, milestone board, consistency check, agent
+activity + diff review, MCP & skills, create entity, new connection, NPC edit + validation,
+inspector variants, command palette, settings, GDD import, export dialog, project switcher,
+empty project, system states, node context menu.
+
+Implementation notes: the dot-grid canvas bg is a shader → reproduce as a tiled CSS
+radial-gradient; graph edges are SVG beziers → build as React Flow edges. Multiple
+synchronized views (graph + table + tree) of the same store serve both visual and
+list-oriented designers (HacknPlan pattern, taken further on true graph expressiveness).
 
 ---
 
@@ -205,8 +217,11 @@ type schemas + seed. **Accept:** create a project, entities of every core type, 
 connections; dependency query ("what requires X") returns correct results.
 
 **M2 — Web app core:** app shell, React Flow graph canvas (render/move/connect, persist
-positions), type-driven entity inspector, entity table view. **Accept:** author a small
-game design entirely in the UI.
+positions), type-driven entity inspector, entity table view — **built to match
+`docs/design/` (PNG + HTML + `tokens.css`)**. Start by porting `tokens.css` into the
+Tailwind theme and building the 17 reusable components, then compose the screens.
+**Accept:** author a small game design entirely in the UI; screens visually match the
+design exports.
 
 **M3 — MCP server + authoring skills:** stdio server over `packages/db` with batch CRUD,
 `get_design_state`, `get_graph`, `search_entities`, the consistency analyses, and
@@ -215,8 +230,9 @@ Claude Code (via `.mcp.json`) loads `get_skill('mission-design')`, authors a mis
 NPC + dialog following it, and the result passes the consistency tools; UI reflects the
 agent edits on refetch.
 
-**M4 — Pencil mockups:** component library + the 3 MVP screens in `gamedevtool.pen`, used
-to drive/refine the M2 UI.
+**M4 — Pencil mockups: ✅ DONE.** 22 screens + 17 components designed in `gamedevtool.pen`
+and exported to `docs/design/` (PNG + HTML/Tailwind + `tokens.css` + README). This is the
+UI spec M2 implements against. Re-run the Pencil exports whenever the design changes.
 
 **M5 — Trust & export:** plain-text mirror to `design/` (git-diffable) + one engine
 exporter. **Accept:** an agent edit produces a clean, reviewable git diff.
