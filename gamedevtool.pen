@@ -9540,7 +9540,251 @@
               "width": "fill_container",
               "height": "fill_container",
               "fill": "$bg",
-              "layout": "none"
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "TM30r",
+                  "x": 0,
+                  "y": 0,
+                  "name": "edge references",
+                  "geometry": "M150 186l150 50",
+                  "viewBox": [
+                    0,
+                    0,
+                    852,
+                    823
+                  ],
+                  "fill": "#00000000",
+                  "width": 852,
+                  "height": 823,
+                  "stroke": "$border-strong",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "path",
+                  "id": "gIguB",
+                  "x": 0,
+                  "y": 0,
+                  "name": "edge speaks",
+                  "geometry": "M360 296l-210 84",
+                  "viewBox": [
+                    0,
+                    0,
+                    852,
+                    823
+                  ],
+                  "fill": "#00000000",
+                  "width": 852,
+                  "height": 823,
+                  "stroke": "$border-strong",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "type": "path",
+                  "id": "BpYaG",
+                  "x": 0,
+                  "y": 0,
+                  "name": "edge member_of",
+                  "geometry": "M520 240l80-32",
+                  "viewBox": [
+                    0,
+                    0,
+                    852,
+                    823
+                  ],
+                  "fill": "#00000000",
+                  "width": 852,
+                  "height": 823,
+                  "stroke": "$border-strong",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "id": "zR0UC",
+                  "type": "ref",
+                  "ref": "cQ382",
+                  "name": "badge references",
+                  "x": 184,
+                  "y": 189,
+                  "descendants": {
+                    "bvc0G": {
+                      "content": "references"
+                    }
+                  }
+                },
+                {
+                  "id": "twWdq",
+                  "type": "ref",
+                  "ref": "cQ382",
+                  "name": "badge speaks",
+                  "x": 216,
+                  "y": 331,
+                  "descendants": {
+                    "bvc0G": {
+                      "content": "speaks"
+                    }
+                  }
+                },
+                {
+                  "id": "rZIZ1",
+                  "type": "ref",
+                  "ref": "cQ382",
+                  "name": "badge member_of",
+                  "x": 526,
+                  "y": 205,
+                  "descendants": {
+                    "bvc0G": {
+                      "content": "member_of"
+                    }
+                  }
+                },
+                {
+                  "id": "aFF5N",
+                  "type": "ref",
+                  "ref": "r4Seay",
+                  "name": "Rescue the Engineer",
+                  "x": 40,
+                  "y": 90,
+                  "descendants": {
+                    "GwMqq": {
+                      "fill": "$type-mission"
+                    },
+                    "yi2ms": {
+                      "icon": "target",
+                      "fill": "$type-mission"
+                    },
+                    "S8txD": {
+                      "content": "MISSION",
+                      "fill": "$type-mission"
+                    },
+                    "Te4RM/K5p69B": {
+                      "fill": "$status-progress"
+                    },
+                    "Te4RM/gVIEv": {
+                      "content": "In Progress"
+                    },
+                    "i8oze": {
+                      "content": "Rescue the Engineer"
+                    },
+                    "DfqpZ": {
+                      "content": "4 links"
+                    },
+                    "BzUA8": {
+                      "content": "#m_014"
+                    }
+                  }
+                },
+                {
+                  "id": "EoWbA",
+                  "type": "ref",
+                  "ref": "r4Seay",
+                  "name": "Cmdr. Vale",
+                  "x": 300,
+                  "y": 200,
+                  "stroke": "$accent",
+                  "strokeWidth": 2,
+                  "descendants": {
+                    "GwMqq": {
+                      "fill": "$type-npc"
+                    },
+                    "yi2ms": {
+                      "icon": "user",
+                      "fill": "$type-npc"
+                    },
+                    "S8txD": {
+                      "content": "NPC",
+                      "fill": "$type-npc"
+                    },
+                    "Te4RM/K5p69B": {
+                      "fill": "$status-done"
+                    },
+                    "Te4RM/gVIEv": {
+                      "content": "Done"
+                    },
+                    "i8oze": {
+                      "content": "Cmdr. Vale"
+                    },
+                    "DfqpZ": {
+                      "content": "5 links"
+                    },
+                    "BzUA8": {
+                      "content": "#npc_02"
+                    }
+                  }
+                },
+                {
+                  "id": "Whvqq",
+                  "type": "ref",
+                  "ref": "r4Seay",
+                  "name": "Vale: Briefing",
+                  "x": 40,
+                  "y": 380,
+                  "descendants": {
+                    "GwMqq": {
+                      "fill": "$type-dialog"
+                    },
+                    "yi2ms": {
+                      "icon": "message-square",
+                      "fill": "$type-dialog"
+                    },
+                    "S8txD": {
+                      "content": "DIALOG",
+                      "fill": "$type-dialog"
+                    },
+                    "Te4RM/K5p69B": {
+                      "fill": "$status-draft"
+                    },
+                    "Te4RM/gVIEv": {
+                      "content": "Draft"
+                    },
+                    "i8oze": {
+                      "content": "Vale: Briefing"
+                    },
+                    "DfqpZ": {
+                      "content": "6 lines"
+                    },
+                    "BzUA8": {
+                      "content": "#d_07"
+                    }
+                  }
+                },
+                {
+                  "id": "puGmh",
+                  "type": "ref",
+                  "ref": "r4Seay",
+                  "name": "The Coalition",
+                  "x": 600,
+                  "y": 160,
+                  "descendants": {
+                    "GwMqq": {
+                      "fill": "$type-faction"
+                    },
+                    "yi2ms": {
+                      "icon": "shield",
+                      "fill": "$type-faction"
+                    },
+                    "S8txD": {
+                      "content": "FACTION",
+                      "fill": "$type-faction"
+                    },
+                    "Te4RM/K5p69B": {
+                      "fill": "$status-done"
+                    },
+                    "Te4RM/gVIEv": {
+                      "content": "Done"
+                    },
+                    "i8oze": {
+                      "content": "The Coalition"
+                    },
+                    "DfqpZ": {
+                      "content": "7 links"
+                    },
+                    "BzUA8": {
+                      "content": "#f_01"
+                    }
+                  }
+                }
+              ]
             }
           ]
         },
@@ -9557,6 +9801,369 @@
             },
             "dVMJY": {
               "content": "Cmdr. Vale"
+            },
+            "cqPgM": {
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zLh6O",
+                  "name": "EditBanner",
+                  "width": "fill_container",
+                  "fill": "$accent-soft",
+                  "cornerRadius": "$radius-s",
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "bfHYI",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "pencil",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Aw8TZ",
+                      "name": "L",
+                      "fill": "$accent",
+                      "content": "Editing — unsaved changes",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LNjSn",
+                  "name": "StatusRow",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "YdipZ",
+                      "type": "ref",
+                      "ref": "wxU9q",
+                      "name": "Status",
+                      "descendants": {
+                        "K5p69B": {
+                          "fill": "$status-done"
+                        },
+                        "gVIEv": {
+                          "content": "Done"
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "ElkuG",
+                      "name": "Id",
+                      "fill": "$text-muted",
+                      "content": "#npc_02",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "NcVZY",
+                  "type": "ref",
+                  "ref": "ZjZTJ",
+                  "name": "Name",
+                  "width": "fill_container",
+                  "descendants": {
+                    "mEDTe": {
+                      "content": "NAME"
+                    },
+                    "SpwYE": {
+                      "stroke": "$accent"
+                    },
+                    "bjdws": {
+                      "content": "Cmdr. Vale"
+                    }
+                  }
+                },
+                {
+                  "id": "r6Y8iK",
+                  "type": "ref",
+                  "ref": "ZjZTJ",
+                  "name": "Role",
+                  "width": "fill_container",
+                  "descendants": {
+                    "mEDTe": {
+                      "content": "ROLE"
+                    },
+                    "bjdws": {
+                      "content": "Squad Commander"
+                    }
+                  }
+                },
+                {
+                  "id": "U4gU6",
+                  "type": "ref",
+                  "ref": "ZjZTJ",
+                  "name": "Faction",
+                  "width": "fill_container",
+                  "descendants": {
+                    "mEDTe": {
+                      "content": "FACTION"
+                    },
+                    "bjdws": {
+                      "content": "The Coalition"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "gpAL6",
+                  "name": "Location",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "psR7i",
+                      "name": "Label",
+                      "fill": "$text-muted",
+                      "content": "LOCATION",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lVEET",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "$bg-input",
+                      "cornerRadius": "$radius-m",
+                      "stroke": "$error",
+                      "strokeWidth": 1,
+                      "padding": [
+                        9,
+                        12
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "usPgx",
+                          "name": "Value",
+                          "fill": "$text-primary",
+                          "content": "Derelict Stationx",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "jVGRH",
+                          "name": "Alert",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "circle-alert",
+                          "library": "lucide",
+                          "fill": "$error"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b0UDW",
+                      "name": "Error",
+                      "width": "fill_container",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "EE3Pq",
+                          "name": "Icon",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "triangle-alert",
+                          "library": "lucide",
+                          "fill": "$error"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Jr1Us",
+                          "name": "Msg",
+                          "fill": "$error",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "No Location named “Derelict Stationx”. Pick an existing Location entity.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g7WyN",
+                  "name": "Tags",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y5d60",
+                      "name": "Label",
+                      "fill": "$text-muted",
+                      "content": "TAGS",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f4jiE",
+                      "name": "Chips",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "ghFIL",
+                          "type": "ref",
+                          "ref": "JxzAV",
+                          "name": "ally",
+                          "descendants": {
+                            "r2p5WG": {
+                              "content": "ally"
+                            }
+                          }
+                        },
+                        {
+                          "id": "V720n",
+                          "type": "ref",
+                          "ref": "JxzAV",
+                          "name": "act-1",
+                          "descendants": {
+                            "r2p5WG": {
+                              "content": "act-1"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "I7I4b8",
+                          "name": "Add",
+                          "fill": "#00000000",
+                          "cornerRadius": "$radius-pill",
+                          "stroke": "$border-strong",
+                          "strokeWidth": 1,
+                          "gap": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "gNqsK",
+                              "name": "Icon",
+                              "width": 12,
+                              "height": 12,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$text-muted"
+                            },
+                            {
+                              "type": "text",
+                              "id": "eXauD",
+                              "name": "L",
+                              "fill": "$text-muted",
+                              "content": "Add",
+                              "fontFamily": "$font-ui",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oM2we",
+                  "name": "Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "$border"
+                },
+                {
+                  "type": "frame",
+                  "id": "J3hLO",
+                  "name": "Actions",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OEprt",
+                      "name": "Cancel",
+                      "width": "fill_container",
+                      "fill": "#00000000",
+                      "cornerRadius": "$radius-pill",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wk34s",
+                          "name": "L",
+                          "fill": "$text-secondary",
+                          "content": "Cancel",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "L7j43f",
+                      "type": "ref",
+                      "ref": "k5YxE",
+                      "name": "Save",
+                      "width": "fill_container",
+                      "descendants": {
+                        "vOd8e": {
+                          "icon": "check"
+                        },
+                        "Gz4M4": {
+                          "content": "Save changes"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           }
         }
